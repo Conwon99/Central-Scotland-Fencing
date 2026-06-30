@@ -54,64 +54,74 @@ export type BusinessConfig = {
 };
 
 export const business: BusinessConfig = {
-  businessName: "Your Business Name — Home Services",
-  alternateName: "Your Brand",
-  tagline: "Professional home services with tidy workmanship and free quotes.",
-  gbpCategory: "Home Services",
+  businessName: "Central Scotland Fencing",
+  alternateName: "Central Scotland Fencing",
+  tagline: "Expert fencing installation and repairs across Central Scotland. Free quotes.",
+  gbpCategory: "Fencing Contractor",
 
-  phone: "+44 7000 000000",
-  phoneDisplay: "+44 7000 000000",
-  phoneLocal: "07000 000000",
-  trackingPhone: "+44 7000 000001",
-  trackingPhoneLocal: "07000 000001",
+  phone: "+447454033896",
+  phoneDisplay: "+44 7454 033896",
+  phoneLocal: "07454 033896",
+  trackingPhone: null,
+  trackingPhoneLocal: null,
 
-  email: "hello@yourbusiness.co.uk",
-  siteUrl: "https://www.yourbusiness.co.uk",
-  facebookUrl: "https://www.facebook.com/yourbusiness",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Your+Business+Name",
+  email: "central.maintenance25@gmail.com",
+  siteUrl: "https://www.centralscotlandfencing.co.uk",
+  facebookUrl: "https://www.facebook.com/share/1MXd1zuNVt/",
+  googleMapsUrl: "https://www.google.com/maps?q=56.00740000,-3.75332000",
   whatsappUrl: null,
 
-  primaryCity: "Primary City",
-  secondaryCity: "Secondary City",
-  region: "Your Region",
+  primaryCity: "Falkirk",
+  secondaryCity: "Stirling",
+  region: "Central Scotland",
   geoRegion: "GB-SCT",
 
   address: {
-    addressLocality: "Primary City",
-    addressRegion: "Your Region",
+    streetAddress: "Falkirk Road",
+    addressLocality: "Falkirk",
+    addressRegion: "Central Scotland",
     addressCountry: "GB",
+    postalCode: "FK2 9",
   },
 
-  mapCenter: [56.0, -3.5],
+  mapCenter: [56.0074, -3.7533],
   serviceAreaPolygon: [
-    [55.8, -4.0],
-    [55.8, -3.0],
-    [56.2, -2.8],
-    [56.4, -3.2],
-    [56.3, -3.9],
-    [55.8, -4.0],
+    [56.16, -3.95],
+    [56.16, -3.59],
+    [55.97, -3.59],
+    [55.97, -3.95],
+    [56.16, -3.95],
   ],
 
   assets: {
-    hero: "/hero.jpg",
-    logo: "/logo.png",
-    about: "/about.jpg",
-    gallery: ["/gal_01.jpg", "/gal_02.jpg", "/gal_03.jpg", "/gal_04.jpg", "/gal_05.jpg", "/gal_06.jpg"],
+    hero: "/central-scotland-fencing-hero.jpg",
+    logo: "/central-scotland-fencing-logo.png",
+    about: "/central-scotland-fencing-about.jpg",
+    gallery: [
+      "/central-scotland-fencing-gal-01.jpg",
+      "/central-scotland-fencing-gal-02.jpg",
+      "/central-scotland-fencing-gal-03.jpg",
+      "/central-scotland-fencing-gal-04.jpg",
+      "/central-scotland-fencing-gal-05.jpg",
+      "/central-scotland-fencing-gal-06.jpg",
+    ],
   },
 
   serviceTypes: [
-    "Primary service installation",
-    "Primary service repairs",
-    "Secondary service",
-    "Garden and outdoor improvements",
+    "Timber panel fencing installation",
+    "Slatted and close-board fencing",
+    "Palisade and security fencing",
+    "Bespoke gate installation",
+    "Fence removal and disposal",
+    "Fence repairs and replacement sections",
     "Free quotes",
   ],
 
   openingHours: [
     {
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "08:00",
-      closes: "18:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
 
@@ -137,20 +147,20 @@ export const brandName = () => business.alternateName;
 export const citiesLabel = () => `${business.primaryCity} & ${business.secondaryCity}`;
 
 export const homepageTitle = () =>
-  `${business.alternateName} | Home Services in ${citiesLabel()}`;
+  `${business.alternateName} | Fencing Services in ${citiesLabel()}`;
 
 export const homepageDescription = () =>
   truncateMeta(
-    `${business.alternateName} provides professional home services across ${citiesLabel()} and ${business.region}. Free quotes available.`,
+    `${business.alternateName} provides expert fencing installation and repairs across ${citiesLabel()} and ${business.region}. Timber panels, gates, palisade fencing and more. Free quotes.`,
   );
 
-export const homepageH1 = () => `Home Services in ${citiesLabel()}`;
+export const homepageH1 = () => `Fencing Services in ${citiesLabel()}`;
 
 export const defaultKeywords = () =>
-  `home services ${business.primaryCity}, ${business.secondaryCity}, ${business.alternateName}, free quote`;
+  `fencing ${business.primaryCity}, fencing contractor ${business.secondaryCity}, ${business.alternateName}, free quote`;
 
 export const defaultOgImageAlt = () =>
-  `${business.alternateName} home services in ${citiesLabel()}`;
+  `${business.alternateName} fencing services in ${citiesLabel()}`;
 
 export const schemaImages = (): string[] => [
   absoluteUrl(business.assets.logo),
