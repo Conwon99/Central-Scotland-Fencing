@@ -10,20 +10,24 @@ const cities = citiesLabel();
 
 export const homepageFaqs: FaqItem[] = [
   {
-    question: "Do you offer free quotes?",
-    answer: `Yes. Contact ${brand} by phone or message with details of your enquiry and we can discuss a free quote.`,
+    question: "Do you offer free fencing quotes?",
+    answer: `Yes. ${brand} provides free no-obligation quotes for all fencing work. Call or message with details of your project and the team will get back to you promptly.`,
   },
   {
     question: "What areas do you cover?",
-    answer: `${brand} serves ${cities} and surrounding areas in ${business.region}. If you are nearby, get in touch and we can confirm availability.`,
+    answer: `${brand} covers ${cities} and surrounding areas including Larbert, Denny, Bonnybridge, Polmont, Grangemouth, Linlithgow, Alloa, Bannockburn, Bridge of Allan and Bo'ness across ${business.region}.`,
+  },
+  {
+    question: "What fencing services do you provide?",
+    answer: `${brand} installs timber panel fencing, close-board and slatted fencing, palisade and security fencing, and bespoke gates. The team also handles fence removal and repairs including storm damage.`,
+  },
+  {
+    question: "Do you remove old fencing?",
+    answer: `Yes. Old fence removal and disposal is included in all full replacement installation quotes. There is nothing for the customer to organise — the old fence leaves with the team.`,
   },
   {
     question: "How do I get started?",
-    answer: `Call ${brand} or use the contact form with a brief description of the work and your location. Photos are helpful.`,
-  },
-  {
-    question: "Do you handle outdoor and home service work?",
-    answer: `Yes. ${brand} handles a range of home and outdoor services with tidy workmanship and free quotes.`,
+    answer: `Call ${brand} on ${business.phoneLocal} or use the contact form with a brief description of the fencing work and your location. Photos of the existing boundary are helpful and speed up the quoting process.`,
   },
 ];
 
