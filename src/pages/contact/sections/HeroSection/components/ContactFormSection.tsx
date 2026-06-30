@@ -10,7 +10,7 @@ export const ContactFormSection = () => {
           iconAlt="Phone"
           showIcon={true}
           trackingLocation="contact-form"
-          className="text-white items-center box-border caret-transparent gap-x-3 flex mb-2.5"
+          className="text-white items-center box-border caret-transparent gap-x-3 flex justify-center mb-2.5"
           displayClassName="text-white text-lg font-bold box-border caret-transparent leading-[23.4px] md:text-[22px] md:leading-[28.6px]"
         />
         <div className="box-border caret-transparent mt-[30px] mb-[15px]">
